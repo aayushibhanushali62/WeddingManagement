@@ -35,5 +35,17 @@ java WeddingManagement
 - Applied object-oriented design in a real-world project  
 - Managed dynamic data using collections  
 - Built role-based system (User & Admin)  
-- Implemented validation and structured workflows  
+- Implemented validation and structured workflows
+
+  ## 🚀 Future Improvements
+- 🔹 Integrate MySQL database using JDBC for persistent data storage  
+- 🔹 Build a GUI version using JavaFX or Swing for better user experience  
+- 🔹 Develop a web-based version using Spring Boot  
+- 🔹 Implement secure authentication (password encryption, validation)  
+- 🔹 Add email/SMS notifications for booking confirmations and updates  
+- 🔹 Introduce online payment integration (Razorpay/Stripe)  
+- 🔹 Add role-based access with multiple admin levels  
+- 🔹 Implement REST APIs for scalability and integration with frontend  
+- 🔹 Add search, filters, and sorting for bookings and venues  
+- 🔹 Improve analytics dashboard with charts and reports  
 
