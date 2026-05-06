@@ -26,15 +26,7 @@ The system allows users to manage wedding events efficiently while providing an 
 - Data Structures (ArrayList, HashMap)  
 - File Handling  
 - Java Stream API  
-
-## 📸 Screenshots  
-(Add your images here)  
-- Main Menu  
-- Booking Flow  
-- Invoice Output  
-- Admin Dashboard  
-- Analytics  
-
+ 
 ## ▶️ Run the Project  
 javac WeddingManagement.java  
 java WeddingManagement  
