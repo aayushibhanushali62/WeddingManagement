@@ -138,20 +138,18 @@ public class WeddingManagement {
         boolean running = true;
         while (running) {
             printHeader("Wedding Management System v2.0");
-            System.out.println("  1. Login");
-            System.out.println("  2. Sign Up");
-            System.out.println("  3. Forgot Password");
-            System.out.println("  4. Admin Panel");
-            System.out.println("  5. Exit");
+            System.out.println("  1. Sign Up");
+            System.out.println("  2. Login");
+            System.out.println("  3. Admin Panel");
+            System.out.println("  4. Exit");
             System.out.print("Select: ");
 
             int choice = readInt();
             switch (choice) {
-                case 1: loginFlow(); break;
-                case 2: signupFlow(); break;
-                case 3: forgotPasswordFlow(); break;
-                case 4: adminPanel(sc); break;
-                case 5: System.out.println("Goodbye!"); running = false; break;
+                case 1: signupFlow(); break;
+                case 2: loginFlow(); break;
+                case 3: adminPanel(sc); break;
+                case 4: System.out.println("Goodbye!"); running = false; break;
                 default: System.out.println("  -> Invalid choice.");
             }
         }
@@ -175,8 +173,15 @@ public class WeddingManagement {
 
     private void loginFlow() {
         printDivider("Login");
-        System.out.print("Email: ");
+        System.out.println("Type 'forgot' as your email if you need to reset your password.");
+        System.out.print("Email (or 'forgot'): ");
         String email = sc.nextLine().trim().toLowerCase();
+        
+        if (email.equals("forgot")) {
+            forgotPasswordFlow();
+            return;
+        }
+
         if (!USERS.containsKey(email)) {
             System.out.println("  -> No account found. Please sign up.");
             return;
